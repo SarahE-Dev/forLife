@@ -80,6 +80,28 @@ const addNoises = function(arr){
       }
 
 
+  const womenOnly = function(arr){
+    let result = [];
+    for(let str of arr){
+      if(str[str.length-1] === 'F'){
+        result.push(str)
+      }
+    }
+    return result;
+  }
+  const integersOnly = function(num){
+    let result = [];
+    for(let num of arr){
+      if(num % 1 === 0){
+        result.push(num)
+      }
+    }
+    return result;
+  }
+
+
+
+
   /*********************************
  * OUR CODE BELOW; DO NOT TOUCH! *
  *********************************/
