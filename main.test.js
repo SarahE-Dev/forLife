@@ -1,9 +1,86 @@
 /******************
  * YOUR CODE HERE *
  ******************/
+const addAll = function(arr){
+  let sum = 0;
+  for(let num of arr){
+    sum += num;
+  }
+  return sum;
+}
+
+const countSpaces = function(str){
+  let sum = 0;
+  for(let letter of str){
+    if(letter === ' '){
+      sum++;
+    }
+  }
+  return sum;
+}
+ 
+const countTrues = function(arr){
+  let sum = 0;
+  for(let trues of arr){
+    if(trues === true){
+      sum++;
+    }
+  }
+  return sum;
+}
+
+// const makeFriendly = function(str){
+//   let newStr = str.replaceAll('.', '!');
+//   return newStr;
+
+//   }
+
+const makeFriendly = function(str){
+  let result = "";
+  for(let char of str){
+    if(char === "."){
+      result += "!"
+    }else{
+      result += char
+    }
+  }
+  return result
+}
 
 
-/*********************************
+const cubeAll = function(arr){
+  let newArr = arr.map(function(num){
+    return num ** 3;
+  })
+  return newArr;
+}
+
+const addNoises = function(arr){
+  let result = [];
+  for(let animal of arr){
+    switch(true){
+      case (animal === 'Rolph' || animal === 'Maisie' || animal === 'Fido'): {
+        result.push(animal + ' says "Woof!"' )
+        break;
+      }
+      case (animal === 'Heathcliff' || animal === 'Garfield'): {
+        result.push(animal + ' says "Meow!"' )
+        break;
+      }
+      case (animal === 'Barnie' || animal === 'Sharp Tooth'): {
+        result.push(animal + ' says "ROWR."' )
+        break;
+      }
+      default: break;
+      
+    }
+}
+
+      return result;
+      }
+
+
+  /*********************************
  * OUR CODE BELOW; DO NOT TOUCH! *
  *********************************/
 
